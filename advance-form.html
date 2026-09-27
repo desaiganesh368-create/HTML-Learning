@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GTU REGISTRATION FORM</h1>
+    <hr>
+    <hr>
+    
+    <form action="register" method="post">
+        <h2>Personal Information</h2>
+<hr><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+        <label for="enrollment">Enrollment Number:</label>
+        <input type="text" id="enrollment" name="enrollment" required placeholder="Enter enrollment number"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <h2>Academic Information</h2>
+        <hr><br>
+
+        <label for="Branch">Branch:</label>
+        <select>
+            <option value="C.E" selected>C.E</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="MECHANICAL">MECHANICAL</option>
+            <option value="ELECTRICAL">ELECTRICAL</option>
+        </select>
+        <br><br>
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester" min="1" max="8" required><br><br>    
+
+        <h2>Other Information</h2>
+        <hr><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="Male" name="gender" value="male" >
+        <label for="male" >Male</label>
+        <input type="radio" id="Female" name="gender" value="female" >
+        <label for="female" >Female</label>
+        <br>
+        <label for="Skills">Skills:</label>
+        <input type="checkbox" id="HTML" name="Skills" value="HTML">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="CSS" name="Skills" value="CSS">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="JavaScript" name="Skills" value="JavaScript">
+        <label for="JavaScript">JavaScript</label>
+        <br><br>
+        <label for="address"> Address:</label>
+        <textarea id="address" name="address" rows="1" cols="50"></textarea>
+        <br><br>
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+        <br><br>
+        <hr>
+        <input type="Submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
